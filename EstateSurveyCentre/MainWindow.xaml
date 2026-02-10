@@ -1,0 +1,31 @@
+<Window x:Class="EstateSurveyCentre.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:EstateSurveyCentre.ViewModels"
+        Title="Estate Survey Centre" Height="600" Width="1000">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 0 0 16">
+            <Button Content="Jóváhagyás" Width="140" Margin="0 0 12 0" Command="{Binding ApproveSelectedCommand}" />
+            <Button Content="Elutasítás" Width="140" Command="{Binding RejectSelectedCommand}" />
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Tasks}" SelectedItem="{Binding SelectedTask}" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Azonosító" Binding="{Binding TaskId}" Width="*" />
+                <DataGridTextColumn Header="Ügyfél" Binding="{Binding ClientId}" Width="*" />
+                <DataGridTextColumn Header="Cím" Binding="{Binding Title}" Width="*" />
+                <DataGridTextColumn Header="Ingatlan" Binding="{Binding Address}" Width="*" />
+                <DataGridTextColumn Header="Státusz" Binding="{Binding Status}" Width="*" />
+                <DataGridTextColumn Header="Frissítve" Binding="{Binding UpdatedAtUtc}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

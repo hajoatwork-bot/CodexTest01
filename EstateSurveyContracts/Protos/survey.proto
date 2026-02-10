@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package estate.survey;
+
+option csharp_namespace = "EstateSurvey.Contracts";
+
+message SurveyTask {
+  string task_id = 1;
+  string client_id = 2;
+  string title = 3;
+  string address = 4;
+  string description = 5;
+  TaskStatus status = 6;
+  string created_at_utc = 7;
+  string updated_at_utc = 8;
+  optional string assigned_agent_id = 9;
+  repeated SurveyPhoto photos = 10;
+}
+
+message SurveyPhoto {
+  string photo_id = 1;
+  string file_name = 2;
+  ImageResolution resolution = 3;
+  string captured_at_utc = 4;
+}
+
+enum TaskStatus {
+  TASK_STATUS_UNSPECIFIED = 0;
+  CLIENT_NEW = 1;
+  CLIENT_SUBMITTED = 2;
+  CENTRE_APPROVED = 3;
+  CENTRE_REJECTED = 4;
+  AGENT_IN_PROGRESS = 5;
+  AGENT_COMPLETED = 6;
+}
+
+enum ImageResolution {
+  IMAGE_RESOLUTION_UNSPECIFIED = 0;
+  LOW = 1;
+  MEDIUM = 2;
+  HIGH = 3;
+}

@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateSurveyContracts", "EstateSurveyContracts\\EstateSurveyContracts.csproj", "{C2D1D469-2AF8-4440-9626-D794A8F31C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateSurveyClient", "EstateSurveyClient\\EstateSurveyClient.csproj", "{5D538054-9431-40E2-9C38-06FD754E6F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateSurveyCentre", "EstateSurveyCentre\\EstateSurveyCentre.csproj", "{A4D1BE3B-9D46-4368-8125-B5BE8264FAE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstateSurveyAgent", "EstateSurveyAgent\\EstateSurveyAgent.csproj", "{F3AEA296-FE47-4A4C-BFA7-D9A56C55D3F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2D1D469-2AF8-4440-9626-D794A8F31C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D1D469-2AF8-4440-9626-D794A8F31C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D1D469-2AF8-4440-9626-D794A8F31C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D1D469-2AF8-4440-9626-D794A8F31C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D538054-9431-40E2-9C38-06FD754E6F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D538054-9431-40E2-9C38-06FD754E6F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D538054-9431-40E2-9C38-06FD754E6F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D538054-9431-40E2-9C38-06FD754E6F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D1BE3B-9D46-4368-8125-B5BE8264FAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D1BE3B-9D46-4368-8125-B5BE8264FAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D1BE3B-9D46-4368-8125-B5BE8264FAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D1BE3B-9D46-4368-8125-B5BE8264FAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AEA296-FE47-4A4C-BFA7-D9A56C55D3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AEA296-FE47-4A4C-BFA7-D9A56C55D3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AEA296-FE47-4A4C-BFA7-D9A56C55D3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AEA296-FE47-4A4C-BFA7-D9A56C55D3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
